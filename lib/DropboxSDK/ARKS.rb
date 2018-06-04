@@ -34,11 +34,6 @@ module DropboxSDK
           puts "Folder does not exists. Please provide appropriate folder name."
         end
       end
-    end 
+    end
   end
 end
-
-obj1 = DropboxSDK::ARKS::DropboxIntegrations.new("i3cWCpVYK9MAAAAAAAA48C3waWYxDQeq-bUdZgj3Y9WFRIcWv9t1tzE3n7UntjeL")
-lists = obj1.list_files("myfolder")
-obj1.download_files(lists, "../", "myfolder")
-
